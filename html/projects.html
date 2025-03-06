@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+
+        <title>
+                Matthew Joseph's - Projects
+        </title>
+
+        <link href="https://fonts.googleapis.com/css?family=JetBrains Mono" rel="stylesheet">
+
+        <style>
+            body{
+                background-color: black;    
+            }
+
+            .border { 
+                width: 1480px; 
+                height: 720px;
+                border: 20px solid transparent; 
+                border-image: linear-gradient(to bottom right, #00A3FF, #DB00FF); 
+                border-image-slice: 1; 
+            } 
+
+            #navI{
+                margin-left: 1140px;
+                margin-top: 25px;
+            }
+
+            #navL{
+                font-family: 'JetBrains Mono';
+                font-size: 32px;
+                font-weight: bold;
+                position: relative;
+                bottom: 80px;
+                
+            }
+
+            a:link {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+                }
+
+            a:visited {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+                }
+
+                a:hover {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+                animation: link 4s;
+            }
+
+            @keyframes link{
+                0% {color: white;}
+                25% {color:#00A3FF;}
+                50% {color: #DB00FF;}
+                75% {color: #00A3FF;}
+                100% {color: white;}
+            }
+
+            a:active {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            ul{
+                list-style-type: none;
+                padding-right: 20px;
+            }
+
+            li{
+                display: inline;
+            }
+
+            img {
+                width: 60px;
+                height: 60px;
+                align-items: center;
+            }
+
+            img:hover{
+                transform: scale(1.1);
+                transition: 0.5s;}
+
+            .grid-container{
+                display: grid;
+                gap: 20px 75px;
+                grid-template-columns: auto auto auto;
+                padding-left: 90px;
+                padding-right: 90px;
+            }
+
+            .grid-item-title{
+                font-size: 30px;
+                text-align: center;
+                color: white;
+                font-family: 'JetBrains Mono';
+                font-weight: bold;}
+
+            .grid-item-holder{
+                background-color: white;
+                border: 5px solid transparent; 
+                border-image: linear-gradient(to bottom right, #00A3FF, #DB00FF); 
+                border-image-slice: 1;
+                align-content: center;
+                height: 150px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="border">
+
+            <nav id="navI">
+                <a href="mailto: matthew.joseph.xpndble@gmail.com">
+                    <img src="Images/Gmail.png" alt="Image link to email"></a>
+                <a href="https://github.com/Matt-GitHubs">
+                    <img src="Images/GitHub.png" alt="Image link to github" style="margin-left: 60px;">
+                </a>
+            </nav>
+
+            <nav id="navL" class="id"> 
+                <ul>
+                    <li style="height: 100px; height: 100px; margin-left: 50px;"><a href="index.html">Home</a></li>
+                    <li style="height: 100px; height: 100px; margin-left: 50px;"><a href="projects.html">Projects</a></li>
+                    <li style="height: 100px; height: 100px; margin-left: 50px;"><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="grid-container">
+                <div class="grid-item-title">Project 1</div>
+                <div class="grid-item-title">Project 2</div>
+                <div class="grid-item-title">Project 3</div>  
+                <div class="grid-item-holder"></div>
+                <div class="grid-item-holder"></div>
+                <div class="grid-item-holder"></div>
+                <div class="grid-item-title">Project 4</div>
+                <div class="grid-item-title">Project 5</div>
+                <div class="grid-item-title">Project 6</div>  
+                <div class="grid-item-holder"></div>
+                <div class="grid-item-holder"></div>
+                <div class="grid-item-holder"></div>  
+              </div>
+
+        </div>
+    </body>
+</html>

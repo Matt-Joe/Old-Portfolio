@@ -1,0 +1,131 @@
+body{
+    background-color: black;  
+    z-index: 1; 
+    }
+
+.border { 
+    width: 1480px; 
+    height: 100%;
+    border: 20px solid transparent; 
+    border-image: linear-gradient(to bottom right, #00A3FF, #DB00FF); 
+    border-image-slice: 1; 
+    } 
+
+p{
+    color:white;
+    font-family: 'JetBrains Mono';
+}
+
+#p1 {
+    font-size: 90px;
+}
+
+#p2{
+    font-size: 20px;
+    margin-bottom: 65px;
+}
+
+#navI{
+    margin-left: 1140px;
+    margin-top: 25px;
+}
+
+#navL{
+    font-family: 'JetBrains Mono';
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    bottom: 80px;
+    
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    }
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    }
+
+    a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    animation: link 4s ;
+}
+
+@keyframes link{
+    0% {color: white;}
+    25% {color:#00A3FF;}
+    50% {color: #DB00FF;}
+    75% {color: #00A3FF;}
+    100% {color: white;}
+}
+
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+ul.l{
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+li.nli{
+    display: inline;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    align-items: center;
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;}
+
+div{
+    width: 1300px;}
+
+#pad{
+    padding-left: 100px;
+    position: relative;
+    bottom: 125px;
+}
+
+.collapsible {
+    background-color: black;
+    color: white;
+    font-family: 'JetBrains Mono';
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+
+.active, .collapsible:hover {
+    border: 5px solid transparent; 
+    border-image: linear-gradient(to bottom right, #00A3FF, #DB00FF); 
+    border-image-slice: 1;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.content {
+    display: none;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    font-family: 'JetBrains Mono';
+    margin-left: 30px;
+}
