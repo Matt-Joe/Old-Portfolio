@@ -36,7 +36,26 @@ p{
     font-weight: bold;
     position: relative;
     bottom: 80px;
-    
+}
+
+#id{
+    border-bottom: 2px solid transparent; 
+    border-image: linear-gradient(to bottom right, #00A3FF, #DB00FF); 
+    border-image-slice: 1; 
+    animation: navBorder 5s;
+}
+
+@keyframes navBorder{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+.link{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    animation: link 4s ;
 }
 
 a:link {
@@ -51,12 +70,12 @@ a:visited {
     text-decoration: none;
     }
 
-    a:hover {
+a:hover {
     color: white;
     background-color: transparent;
     text-decoration: none;
     animation: link 4s ;
-}
+    }
 
 @keyframes link{
     0% {color: white;}
@@ -118,7 +137,7 @@ div{
     border-image: linear-gradient(to bottom right, #00A3FF, #DB00FF); 
     border-image-slice: 1;
     padding: 20px;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .content {
