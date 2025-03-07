@@ -2,165 +2,169 @@
 <html lang="en">
 
     <head>
-
+        
         <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 
-        <title>
-                About Matthew Joseph
-        </title>
 
-        <link href="https://fonts.googleapis.com/css?family=JetBrains Mono" rel="stylesheet">
+    <title>
+            About Matthew Joseph
+    </title>
 
-        <style>
-            body{
-                background-color: black;  
-                z-index: 1; 
-                }
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
 
-            .border { 
-                width: 1480px; 
-                height: 100%;
-                border: 20px solid transparent; 
-                border-image: linear-gradient(to bottom right, #00A3FF, #DB00FF); 
-                border-image-slice: 1; 
-                } 
+    <style>
 
-            p{
-                color:white;
-                font-family: 'JetBrains Mono';
+        body{
+            background-color: black;  
+            z-index: 1; 
             }
 
-            #p1 {
-                font-size: 90px;
+        .border { 
+            width: 1480px; 
+            height: 100%;
+            border: 20px solid transparent; 
+            border-image: linear-gradient(to bottom right, #00A3FF, #DB00FF); 
+            border-image-slice: 1; 
+            } 
+
+        p{
+            color:white;
+            font-family: 'JetBrains Mono';
+        }
+
+        #p1 {
+            font-size: 90px;
+        }
+
+        #p2{
+            font-size: 20px;
+            margin-bottom: 65px;
+        }
+
+        #navI{
+            margin-left: 1140px;
+            margin-top: 25px;
+        }
+
+        #navL{
+            font-family: 'JetBrains Mono';
+            font-size: 32px;
+            font-weight: bold;
+            position: relative;
+            bottom: 80px;
+            
+        }
+
+        a:link {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
             }
 
-            #p2{
-                font-size: 20px;
-                margin-bottom: 65px;
+        a:visited {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
             }
 
-            #navI{
-                margin-left: 1140px;
-                margin-top: 25px;
-            }
+            a:hover {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+            animation: link 4s ;
+        }
 
-            #navL{
-                font-family: 'JetBrains Mono';
-                font-size: 32px;
-                font-weight: bold;
-                position: relative;
-                bottom: 80px;
-                
-            }
+        @keyframes link{
+            0% {color: white;}
+            25% {color:#00A3FF;}
+            50% {color: #DB00FF;}
+            75% {color: #00A3FF;}
+            100% {color: white;}
+        }
 
-            a:link {
-                color: white;
-                background-color: transparent;
-                text-decoration: none;
-                }
+        a:active {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
 
-            a:visited {
-                color: white;
-                background-color: transparent;
-                text-decoration: none;
-                }
+        ul.l{
+            list-style-type: none;
+            padding-right: 20px;
+        }
 
-                a:hover {
-                color: white;
-                background-color: transparent;
-                text-decoration: none;
-                animation: link 4s ;
-            }
+        li.nli{
+            display: inline;
+        }
 
-            @keyframes link{
-                0% {color: white;}
-                25% {color:#00A3FF;}
-                50% {color: #DB00FF;}
-                75% {color: #00A3FF;}
-                100% {color: white;}
-            }
+        img {
+            width: 60px;
+            height: 60px;
+            align-items: center;
+        }
 
-            a:active {
-                color: white;
-                background-color: transparent;
-                text-decoration: none;
-            }
+        img:hover{
+            transform: scale(1.1);
+            transition: 0.5s;}
 
-            ul.l{
-                list-style-type: none;
-                padding-right: 20px;
-            }
+        div{
+            width: 1300px;}
 
-            li.nli{
-                display: inline;
-            }
+        #pad{
+            padding-left: 100px;
+            position: relative;
+            bottom: 125px;
+        }
 
-            img {
-                width: 60px;
-                height: 60px;
-                align-items: center;
-            }
+        .collapsible {
+            background-color: black;
+            color: white;
+            font-family: 'JetBrains Mono';
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+        }
 
-            img:hover{
-                transform: scale(1.1);
-                transition: 0.5s;}
+        .active, .collapsible:hover {
+            border: 5px solid transparent; 
+            border-image: linear-gradient(to bottom right, #00A3FF, #DB00FF); 
+            border-image-slice: 1;
+            padding: 20px;
+            transition: 0.2s;
+        }
 
-            div{
-                width: 1300px;}
+        .content {
+            display: none;
+            overflow: hidden;
+            background-color: black;
+            color: white;
+            font-family: 'JetBrains Mono';
+            margin-left: 30px;
+        }
+    </style>
 
-            #pad{
-                padding-left: 100px;
-                position: relative;
-                bottom: 125px;
-            }
+    
 
-            .collapsible {
-                background-color: black;
-                color: white;
-                font-family: 'JetBrains Mono';
-                font-size: 40px;
-                font-weight: bold;
-                cursor: pointer;
-                width: 100%;
-                border: none;
-                text-align: left;
-                outline: none;
-            }
+</head>
 
-            .active, .collapsible:hover {
-                border: 5px solid transparent; 
-                border-image: linear-gradient(to bottom right, #00A3FF, #DB00FF); 
-                border-image-slice: 1;
-                padding: 20px;
-                transition: 0.2s;
-            }
-
-            .content {
-                display: none;
-                overflow: hidden;
-                background-color: black;
-                color: white;
-                font-family: 'JetBrains Mono';
-                margin-left: 30px;
-            }
-        </style>
-
-    </head>
-
-    <body>
+    <body ></body>
         <div class="border">
 
             <nav id="navI">
                 <a href="mailto: matthew.joseph.xpndble@gmail.com">
-                    <img src="Images/Gmail.png" alt="Image link to email"></a>
+                    <img src="../images/gmail.webp" alt="Image link to email"></a>
                 <a href="https://github.com/Matt-GitHubs">
-                    <img src="Images/GitHub.png" alt="Image link to github" style="margin-left: 60px;">
+                    <img src="../images/git.png" alt="Image link to github" style="margin-left: 60px;">
                 </a>
             </nav>
 
-            <nav id="navL"> 
+            <nav id="navL" class="id"> 
                 <ul class="l">
-                    <li class="nli" style="height: 100px; height: 100px; padding-left: 50px;"><a href="index.html">Home</a></li>
+                    <li class="nli" style="height: 100px; height: 100px; padding-left: 50px;"><a href="../index.html">Home</a></li>
                     <li class="nli" style="height: 100px; height: 100px; padding-left: 50px;"><a href="projects.html">Projects</a></li>
                     <li class="nli" style="height: 100px; height: 100px; padding-left: 50px;"><a href="about.html">About</a></li>
                 </ul>
