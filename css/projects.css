@@ -112,13 +112,20 @@ img:hover{
     height: 150px;
     border-image: conic-gradient(#3779FF 0deg,#DB00FF 135deg, #00A3FF 315deg, #3779FF 360deg);
     border-image-slice: 1; 
-    animation: grids 4s;
+}
+
+.grid-item-holder:hover{
+    animation: grids 4s infinite;
 }
 
 @keyframes grids{
-    0% {border-image: conic-gradient(#A429FF 0deg, #00A3FF 135deg,  #DB00FF 315deg, #A429FF 360deg); 
+    0% {border-image: conic-gradient(#3779FF 0deg,#DB00FF 135deg, #00A3FF 315deg, #3779FF 360deg);
         border-image-slice: 1;}
-    50% {border-image: conic-gradient(#A429FF 0deg, #DB00FF 45deg, #00A3FF 225deg, #A429FF 360deg);
+    25% {border-image: conic-gradient(#3779FF 0deg, #00A3FF 45deg,  #DB00FF 225deg, #3779FF 360deg); 
+        border-image-slice: 1;}
+    50% {border-image: conic-gradient(#A429FF 0deg, #00A3FF 135deg, #DB00FF 315deg, #A429FF 360deg);
+        border-image-slice: 1;}
+    75% {border-image: conic-gradient(#A429FF 0deg, #DB00FF 45deg, #00A3FF 225deg,   #A429FF 360deg); 
         border-image-slice: 1;}
     100% {border-image: conic-gradient(#3779FF 0deg,#DB00FF 135deg, #00A3FF 315deg, #3779FF 360deg);
          border-image-slice: 1;}

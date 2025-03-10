@@ -65,7 +65,7 @@ p{
     color: white;
     background-color: transparent;
     text-decoration: none;
-    animation: link 4s ;
+    animation: link 4s infinite ;
 }
 
 a:link {
@@ -145,14 +145,25 @@ div{
     border: none;
     text-align: left;
     outline: none;
+    transition: 0.3s;
 }
 
 .active, .collapsible:hover {
-    border: 5px solid transparent; 
-    border-image: linear-gradient(to bottom right, #00A3FF, #DB00FF); 
-    border-image-slice: 1;
+    border: 5px solid transparent;
     padding: 20px;
-    transition: 0.3s;
+    transition: 0.3s; 
+    border-image: conic-gradient(#3779FF 0deg,#DB00FF 135deg, #00A3FF 315deg, #3779FF 360deg);
+    border-image-slice: 1; 
+    animation: collapse 4s;
+}
+
+@keyframes collapse{
+0% {border-image: conic-gradient(#A429FF 0deg, #00A3FF 135deg,  #DB00FF 315deg, #A429FF 360deg); 
+    border-image-slice: 1;}
+50% {border-image: conic-gradient(#A429FF 0deg, #DB00FF 45deg, #00A3FF 225deg, #A429FF 360deg);
+    border-image-slice: 1;}
+100% {border-image: conic-gradient(#3779FF 0deg,#DB00FF 135deg, #00A3FF 315deg, #3779FF 360deg);
+     border-image-slice: 1;}
 }
 
 .content {
