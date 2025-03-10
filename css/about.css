@@ -7,9 +7,19 @@ body{
     width: 1480px; 
     height: 100%;
     border: 20px solid transparent; 
-    border-image: linear-gradient(to bottom right, #00A3FF, #DB00FF); 
+    border-image: conic-gradient(#3779FF 0deg,#DB00FF 135deg, #00A3FF 315deg, #3779FF 360deg);
     border-image-slice: 1; 
-    } 
+    animation: border 4s;
+}
+
+@keyframes border{
+    0% {border-image: conic-gradient(#A429FF 0deg, #00A3FF 135deg,  #DB00FF 315deg, #A429FF 360deg); 
+        border-image-slice: 1;}
+    50% {border-image: conic-gradient(#A429FF 0deg, #DB00FF 45deg, #00A3FF 225deg, #A429FF 360deg);
+        border-image-slice: 1;}
+    100% {border-image: conic-gradient(#3779FF 0deg,#DB00FF 135deg, #00A3FF 315deg, #3779FF 360deg);
+         border-image-slice: 1;}
+}
 
 p{
     color:white;
@@ -98,12 +108,17 @@ ul.l{
 
 li.nli{
     display: inline;
+    height: 100px; 
+    height: 100px; 
+    padding-left: 50px;
+
 }
 
 img {
     width: 60px;
     height: 60px;
     align-items: center;
+    margin-left: 60px;
 }
 
 img:hover{
