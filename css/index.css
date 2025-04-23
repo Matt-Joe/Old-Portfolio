@@ -1,17 +1,28 @@
-body{
-    background-color: black;    
+body {
+    background-color: black;
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.border { 
-    width: 1480px; 
-    height: 720px;
-    border: 20px solid transparent; 
+.container {
+    display: grid;
+    grid-template-areas: 
+        "navI navI"
+        "content navL";
+    grid-template-columns: 1fr auto;
+    width: 95%;
+    border: 20px solid transparent;
     border-image: conic-gradient(#3779FF 0deg,#DB00FF 135deg, #00A3FF 315deg, #3779FF 360deg);
-    border-image-slice: 1; 
+    border-image-slice: 1;
     animation: border 4s;
 }
 
-@keyframes border{
+@keyframes border {
     0% {border-image: conic-gradient(#A429FF 0deg, #00A3FF 135deg,  #DB00FF 315deg, #A429FF 360deg); 
         border-image-slice: 1;}
     50% {border-image: conic-gradient(#A429FF 0deg, #DB00FF 45deg, #00A3FF 225deg, #A429FF 360deg);
@@ -20,46 +31,46 @@ body{
          border-image-slice: 1;}
 }
 
-p{
-    color:white;
-    font-family: 'JetBrains Mono';
+#navI {
+    grid-area: navI;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5vw;
+    padding-right: 12vw;
+    padding-top: 5vh;
 }
 
-#p1 {
-    font-size: 90px;
+#navI img {
+    width: 4vw;
+    transition: transform 0.5s;
 }
 
-#p2{
-    font-size: 75px;
+#navI img:hover {
+    transform: scale(1.1);
 }
 
-#p3{ 
-    font-size: 20px;}
-
-#navI{
-    margin-left: 1140px;
-    margin-top: 25px;
+#navLcontent {
+    padding-right: 5vw;
+    padding-top: 10vh;
 }
 
-#navL{
-    font-family: 'JetBrains Mono';
-    font-size: 32px;
+#navL {
+    grid-area: navL;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
     font-weight: bold;
     text-align: center;
-    width: 330px;
-    float:right;
-    position: relative;
-    right: 100px;
-    top: 125px;
     border-width: 5px;
     border-style: solid;
     border-image: linear-gradient(to bottom right, #00A3FF, black, black, black, black, #DB00FF);
-    border-image-slice: 1; 
-}
-
-li{
-   height: 100px; 
-   height: 100px;
+    border-image-slice: 1;
+    padding: 5vh;
+    height: 50vh; /* Adjust the height as needed */
+    width: 20vw;
+    margin: auto; /* Center vertically */
 }
 
 a:link {
@@ -74,7 +85,7 @@ a:visited {
     text-decoration: none;
     }
 
-a:hover {
+    a:hover {
     color: white;
     background-color: transparent;
     text-decoration: none;
@@ -89,33 +100,73 @@ a:hover {
     100% {color: white;}
 }
 
-a:active {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-ul{
+#navL ul {
     list-style-type: none;
-    padding-right: 20px;
+    padding: 0;
+    margin: 0;
 }
 
-img {
-    width: 60px;
-    height: 60px;
-    align-items: center;
-    margin-left: 60px;
+#navL ul li {
+    margin: 10vh 0;
 }
 
-img:hover{
-    transform: scale(1.1);
-    transition: 0.5s;}
+#navL ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
 
-div{
-    width: 900px;}
+#navL ul li a:hover {
+    color: #00A3FF;
+}
 
-#pad{
-    padding-left: 100px;
-    position: relative;
-    bottom: 50px;
+#content {
+    grid-area: content;
+    padding-left: 5vw;
+    padding-bottom: 5vh;
+}
+
+#p1 {
+    font-size: 6vw;
+}
+
+#p2 {
+    font-size: 5vw;
+}
+
+#p3 {
+    font-size: 1.25vw;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+            "navI"
+            "navL"
+            "content";
+        grid-template-columns: 1fr;
+    }
+
+    #navL {
+        font-size: 1.2rem;
+        height: auto; /* Adjust height for smaller screens */
+        width: auto; /* Adjust width for smaller screens */
+        margin: 20px auto; /* Center for smaller screens */
+    }
+
+    #content {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    #p1 {
+        font-size: 7vw;
+    }
+
+    #p2 {
+        font-size: 6vw;
+    }
+
+    #p3 {
+        font-size: 4vw;
+    }
 }
